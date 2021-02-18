@@ -1,7 +1,25 @@
-<html>
-<head><title>Hi !!!!! ravi kant tiwari i am web designer</title>
-</head>
-<body>'
-<h2>hi this is my first code page</h2>
-</body>
-</html>
+How to put scrolling text in title tag?
+
+    <%--TITLE TEXT SCROLL--%>
+    <script type="text/javascript">
+    //function for tittle scrolling
+    function scrlsts() {
+        //var scrltest = " Nature ";
+        scrltest=document.title;
+
+        //alert(scrltest);
+        scrltest = scrltest.substring(1, scrltest.length) + scrltest.substring(0, 1);
+
+        //alert(scrltest);
+        document.title = scrltest;
+
+        setTimeout("scrlsts()", 1000);
+    }
+    $(document).ready(function() {
+        var scrltest = " Arun Kumar Sharma  ";
+        document.title=scrltest;
+        scrlsts();
+    });
+</script> 
+
+    <%--END--%>
